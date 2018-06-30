@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Currency Converter App :: ALC3.0</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+  
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- CSS Files -->
+  <link href="css/material-kit.css?v=2.0.3" rel="stylesheet" />
+  
+</head>
+
+<body>
+
+    <div class="page-header header-filter" filter-color="purple" style="background-image: url('../assets/img/bg7.jpg')">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 ml-auto mr-auto">
+            <div class="card card-signup">
+              <h2 class="card-title text-center">CURRENCY CONVERTER</h2>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-5 ml-auto">
+    
+                    <div class="info info-horizontal">
+                      <div class="icon icon-primary">
+                        <i class="material-icons">code</i>
+                      </div>
+                      <div class="description">
+                        <h4 class="info-title">ALC 3.0 Project</h4>
+                        <p class="description">
+                          Get your currency convertion rate at real time.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-5 mr-auto">
+                   
+                    <form class ="form" onsubmit="return CurrencyConverter();">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">
+                              <i class="material-icons">money</i>
+                            </span>
+                          </div>
+                          <input type="text" id="convert_amount" name="Amount" class="form-control" placeholder="Enter Amount">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">
+                              <i class="material-icons">monetization_on</i>
+                            </span>
+                          </div>
+                          <select id="currency_from" name="currency_from" class="form-control">
+                              <option value="" disabled selected>From Currency</option>
+                            </select>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">
+                              <i class="material-icons">monetization_on</i>
+                            </span>
+                          </div>
+                          <select id="currency_to" name="currency_to" class="form-control">
+                              <option value="" disabled selected>To Currency</option>
+                            </select>
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">
+                                <i class="material-icons">monetization_on</i>
+                              </span>
+                            </div>
+                            <div id="result" class="result"></div>
+                          </div>
+                        </div>
+
+                      <div class="text-center">
+                        <button id="btn_converter" class="btn btn-primary btn-round">CONVERT</button>
+                      </div>
+
+                    </form>
+                    
+                    <div class="error text-center"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<script src="js/core/jquery.min.js" type="text/javascript"></script>
+<script src="js/core/popper.min.js" type="text/javascript"></script>
+<script src="js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+<script src="js/alc3app.js"></script>
+</body>
+
+</html>
