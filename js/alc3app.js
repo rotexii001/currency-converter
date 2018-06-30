@@ -21,7 +21,7 @@ if (navigator.serviceWorker) {
 
 function registerMySW() {
                     // register the service worker
-                    navigator.serviceWorker.register('https://rotexii001.github.io/currency-converter-github.io/sw/sworker.js').then(function (sw) {
+                    navigator.serviceWorker.register('../sw/sworker.js').then(function (sw) {
                         // check service worker controller
                         if (!navigator.serviceWorker.controller) return;
 
@@ -164,13 +164,11 @@ function fetchFromDatabase(symbol, amount) {
                     }
 
                     let _pairs_split = symbol.split('_');
-                    let fr = _pairs_split[0];
-                    let to = _pairs_split[1];
-                    let opt_curr_from = document.getElementById('currency_from');
-                    let curr_amt_text = opt_curr_from.options[opt_curr_from.selectedIndex].innerHTML;
-                    let opt_curr_to = document.getElementById('currency_to');
-                    let result_to = opt_curr_to.options[opt_curr_to.selectedIndex].innerHTML;
-                        $("#result").html(`<div id="result_output" style="font-size:20px; color:#000"><b ${amount} </b> <b>>The Conversion of ${curr_amt_text}</b><br> = <br><b>${(amount * data.value).toFixed(2)} ${result_to}</b></div>`);
+
+                    let toCurrency = document.getElementById('currency_to');
+                    let resultNow = toCurrency.options[toCurrency.selectedIndex].innerHTML;
+
+                    $("#result").append(`<div id="result_output" style="font-size:20px; color:#000">${(amount * val.val).toFixed(2)} ${resultNow}</b></div>`);
                     }
                     }
 }
