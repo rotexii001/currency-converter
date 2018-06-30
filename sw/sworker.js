@@ -2,14 +2,14 @@
 var appCacheName = 'curconv-static-v2';
 var appCacheAssets = [
 
-                    'js/core/jquery.min.js',
-                    'js/core/popper.min.js',
+                    'https://github.com/rotexii001/currency-converter-github.io/js/core/jquery.min.js',
+                    'https://github.com/rotexii001/currency-converter-github.io/js/core/popper.min.js',
                     'https://free.currencyconverterapi.com/api/v5/currencies',
-                    'js/core/bootstrap-material-design.min.js',
-                    'js/alc3app.js',
+                    'https://github.com/rotexii001/currency-converter-github.io/js/core/bootstrap-material-design.min.js',
+                    'https://github.com/rotexii001/currency-converter-github.io/js/alc3app.js',
                     'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons',
                     'https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css',
-                    'css/material-kit.css?v=2.0.3'
+                    'https://github.com/rotexii001/currency-converter-github.io/css/material-kit.css?v=2.0.3'
 ];
 
 
