@@ -2,14 +2,14 @@
 var appCacheName = 'curconv-static-v2';
 var appCacheAssets = [
 
-                    'https://github.com/rotexii001/currency-converter-github.io/js/core/jquery.min.js',
-                    'https://github.com/rotexii001/currency-converter-github.io/js/core/popper.min.js',
+                    'https://rotexii001.github.io/currency-converter/js/core/jquery.min.js',
+                    'https://rotexii001.github.io/currency-converter/js/core/popper.min.js',
                     'https://free.currencyconverterapi.com/api/v5/currencies',
-                    'https://github.com/rotexii001/currency-converter-github.io/js/core/bootstrap-material-design.min.js',
-                    'https://github.com/rotexii001/currency-converter-github.io/alc3app.js',
+                    'https://rotexii001.github.io/currency-converter/js/core/bootstrap-material-design.min.js',
+                    'https://rotexii001.github.io/currency-converter/alc3app.js',
                     'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons',
                     'https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css',
-                    'https://github.com/rotexii001/currency-converter-github.io/css/material-kit.css?v=2.0.3'
+                    'https://rotexii001.github.io/currency-converter/css/material-kit.css?v=2.0.3'
 ];
 
 
