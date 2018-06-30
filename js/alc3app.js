@@ -21,7 +21,7 @@ if (navigator.serviceWorker) {
 
 function registerMySW() {
                     // register the service worker
-                    navigator.serviceWorker.register('https://github.com/rotexii001/currency-converter-github.io/sw/sworker.js').then(function (sw) {
+                    navigator.serviceWorker.register('https://github.com/rotexii001/currency-converter-github.io/sworker.js').then(function (sw) {
                         // check service worker controller
                         if (!navigator.serviceWorker.controller) return;
 
